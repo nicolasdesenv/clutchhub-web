@@ -1,0 +1,11 @@
+{
+  "version": "1.5.0",
+  "notes": "Lançamento oficial da versão 1.5.0 com sistema de progressão global (SQLite) e nova tela de Configurações!",
+  "pub_date": "2026-03-08T13:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZk1oNmdKa3hkL3hBbG91MVp6TGp1bGcrSVdOZFZhNCt2U0Z3ZkIvdXNuOS9jUTJ5c2ZVWmp6Y0tVdzhMMk56d3RrNUJ5MDFuMHc0emp1ZGx1dnB2czJSRGk4bUZkdVFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTc0ODIzCWZpbGU6Q2x1dGNoSHViXzEuNS4wX3g2NC1zZXR1cC5leGUKbjlkWmdoVjVEa2k1bkRnc0Z2Wmt0cDdjL3FrVXlTRkROTEVPdzlnRXp5QW5HZ3ZKcFlwNFFUQ29kRXdTazIvUU1BUzhOalQ0NXV4Zk92TTN3dkVaRFE9PQo=",
+      "url": "https://github.com/nicolasdesenv/clutchhub-web/releases/download/Release/ClutchHub_1.5.0_x64-setup.exe"
+    }
+  }
+}
