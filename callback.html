@@ -7,22 +7,26 @@
     </style>
 </head>
 <body>
-    <h2>Autenticado! Voltando ao aplicativo...</h2>
+    <h2 id="statusMessage">Analisando dados do login...</h2>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        
         const fullUrl = window.location.href;
         
-        if (fullUrl.includes("openid/id/")) {
-            const match = fullUrl.match(/openid\/id\/(\d+)/);
+        const decodedUrl = decodeURIComponent(fullUrl);
+        
+        if (decodedUrl.includes("openid/id/")) {
+            const match = decodedUrl.match(/openid\/id\/(\d+)/);
             if (match && match[1]) {
                 const steamId = match[1];
+                document.getElementById('statusMessage').innerText = "Autenticado! Voltando ao aplicativo...";
+                
                 window.location.href = `clutchhub://login/${steamId}`;
                 
                 setTimeout(() => window.close(), 3000);
+            } else {
+                 document.getElementById('statusMessage').innerHTML = "<span style='color: red;'>Erro: ID não encontrado na URL.</span>";
             }
         } else {
-            document.body.innerHTML = "<h2 style='color: red;'>Erro no login.</h2>";
+            document.getElementById('statusMessage').innerHTML = "<span style='color: red;'>Erro no login. Não foi possível validar a Steam.</span>";
         }
     </script>
 </body>
