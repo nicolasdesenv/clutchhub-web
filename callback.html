@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecionando...</title>
+    <style>
+        body { background: #040508; color: #00E5FF; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+    </style>
+</head>
+<body>
+    <h2>Autenticado! Voltando ao aplicativo...</h2>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        const fullUrl = window.location.href;
+        
+        if (fullUrl.includes("openid/id/")) {
+            const match = fullUrl.match(/openid\/id\/(\d+)/);
+            if (match && match[1]) {
+                const steamId = match[1];
+                window.location.href = `clutchhub://login/${steamId}`;
+                
+                setTimeout(() => window.close(), 3000);
+            }
+        } else {
+            document.body.innerHTML = "<h2 style='color: red;'>Erro no login.</h2>";
+        }
+    </script>
+</body>
+</html>
