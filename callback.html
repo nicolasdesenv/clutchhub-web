@@ -4,24 +4,32 @@
     <title>Redirecionando...</title>
     <style>
         body { background: #040508; color: #00E5FF; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .btn { background: #00E5FF; color: #000; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; display: none; }
     </style>
 </head>
 <body>
     <h2 id="statusMessage">Analisando dados do login...</h2>
+    <a id="openAppBtn" class="btn" href="#">ABRIR CLUTCHHUB</a>
+
     <script>
         const fullUrl = window.location.href;
-        
         const decodedUrl = decodeURIComponent(fullUrl);
         
         if (decodedUrl.includes("openid/id/")) {
             const match = decodedUrl.match(/openid\/id\/(\d+)/);
             if (match && match[1]) {
                 const steamId = match[1];
-                document.getElementById('statusMessage').innerText = "Autenticado! Voltando ao aplicativo...";
+                const deepLink = `clutchhub://login/${steamId}`;
                 
-                window.location.href = `clutchhub://login/${steamId}`;
+                document.getElementById('statusMessage').innerText = "Autenticado! Autorize o navegador a abrir o app.";
                 
-                setTimeout(() => window.close(), 3000);
+                const btn = document.getElementById('openAppBtn');
+                btn.href = deepLink;
+                btn.style.display = "block";
+                
+                window.location.href = deepLink;
+                
+                setTimeout(() => window.close(), 4000);
             } else {
                  document.getElementById('statusMessage').innerHTML = "<span style='color: red;'>Erro: ID não encontrado na URL.</span>";
             }
