@@ -1,11 +1,12 @@
 {
-  "version": "1.5.0",
-  "notes": "Lançamento oficial da versão 1.5.0 com sistema de progressão global (SQLite) e nova tela de Configurações!",
-  "pub_date": "2026-03-08T13:00:00Z",
+  "version": "1.5.1",
+  "notes": "Migração para servidores oficiais na OVH com conexão segura (HTTPS e WSS)! O ClutchHub agora é 100% oficial.",
+  "pub_date": "2026-03-09T14:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZk1oNmdKa3hkL3hBbG91MVp6TGp1bGcrSVdOZFZhNCt2U0Z3ZkIvdXNuOS9jUTJ5c2ZVWmp6Y0tVdzhMMk56d3RrNUJ5MDFuMHc0emp1ZGx1dnB2czJSRGk4bUZkdVFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTc0ODIzCWZpbGU6Q2x1dGNoSHViXzEuNS4wX3g2NC1zZXR1cC5leGUKbjlkWmdoVjVEa2k1bkRnc0Z2Wmt0cDdjL3FrVXlTRkROTEVPdzlnRXp5QW5HZ3ZKcFlwNFFUQ29kRXdTazIvUU1BUzhOalQ0NXV4Zk92TTN3dkVaRFE9PQo=",
-      "url": "https://github.com/nicolasdesenv/clutchhub-web/releases/download/Release/ClutchHub_1.5.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZk1oNmdKa3hkLzhCaVNmWEYvdm1uZW93K0pOQUxucytDYTU0UldNRUZTc0JHbDBVcGNHUzVUL05xK1cvOVlWQnZaeTFENng0RGc5T0pxR2JyVTRRS29lU3EzSVg0dWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczMDc1MzY3CWZpbGU6Q2x1dGNoSHViXzEuNS4xX3g2NC1zZXR1cC5leGUKRXllcEpFSThuc1h4OEN0Q251LyszNGVsemRSaXdFWUhIdERTTlNmQi9TdGpIR1lNUGxMd2UzaDVHb3VjRzlhRFpRTmM5VG9pVFpNRm5YcnpBRC9qRFE9PQo=",
+      "url": "https://github.com/nicolasdesenv/clutchhub-web/releases/download/v1.5.1/ClutchHub_1.5.1_x64-setup.exe"
     }
   }
 }
+
