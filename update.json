@@ -1,5 +1,5 @@
 {
-  "version": "1.5.1",
+  "version": "1.6.0",
   "notes": "Migração para servidores oficiais na OVH com conexão segura (HTTPS e WSS)! O ClutchHub agora é 100% oficial.",
   "pub_date": "2026-03-09T14:00:00Z",
   "platforms": {
