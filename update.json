@@ -1,6 +1,6 @@
 {
   "version": "1.6.0",
-  "notes": "Migração para servidores oficiais na OVH com conexão segura (HTTPS e WSS)! O ClutchHub agora é 100% oficial.",
+  "notes": "Sistema Discord Rich Presence adicionado, melhorias na interface e correção de bugs.",
   "pub_date": "2026-03-09T14:00:00Z",
   "platforms": {
     "windows-x86_64": {
